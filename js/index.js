@@ -38,5 +38,49 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+//let logo = document.getElementById("logo-img");
+//logo.setAttribute('src', siteContent.nav["img-src"]);
+
+let nav = document.getElementsByTagName("nav").item(0);
+
+let firstLink = nav.children.item(0);
+firstLink.innerText = siteContent.nav['nav-item-1'];
+
+let secondLink = nav.children.item(1);
+secondLink.innerText = siteContent.nav['nav-item-2'];
+
+let thirdLink = nav.children.item(2);
+thirdLink.innerText = siteContent.nav['nav-item-3'];
+
+
+
+let fourthLink = nav.children.item(3);
+fourthLink.innerText = siteContent.nav['nav-item-4'];
+
+let fifthLink = nav.children.item(4);
+fifthLink.innerText = siteContent.nav['nav-item-5'];
+
+let sixthLink = nav.children.item(4);
+sixthLink.innerText = siteContent.nav['nav-item-6'];
+
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.src = siteContent.nav["img-src"];
+
+let h1 = document.querySelector(".cta .cta-text h1");
+h1.innerText = siteContent.cta.h1;
+
+
+let button = document.querySelector("button");
+button.innerText = siteContent.cta.button;
+
+let headerImage = document.getElementById("cta-img")
+headerImage.src = siteContent.cta['img-src'];
+
+
+
+/* let features =  document.getElementsByClassName("top-content")[0].children.item(0).children.item(0);
+features.innerText = siteContent["main-content"]["features-content"];
+
+
+ */
+
