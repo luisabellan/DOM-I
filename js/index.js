@@ -53,7 +53,6 @@ let thirdLink = nav.children.item(2);
 thirdLink.innerText = siteContent.nav['nav-item-3'];
 
 
-
 let fourthLink = nav.children.item(3);
 fourthLink.innerText = siteContent.nav['nav-item-4'];
 
@@ -73,14 +72,28 @@ h1.innerText = siteContent.cta.h1;
 let button = document.querySelector("button");
 button.innerText = siteContent.cta.button;
 
-let headerImage = document.getElementById("cta-img")
+let headerImage = document.getElementById("cta-img");
 headerImage.src = siteContent.cta['img-src'];
 
 
+let featuresHeading =  document.getElementsByClassName("top-content")[0].children.item(0).children.item(0);
+featuresHeading.innerText = siteContent["main-content"]["features-h4"];
 
-/* let features =  document.getElementsByClassName("top-content")[0].children.item(0).children.item(0);
-features.innerText = siteContent["main-content"]["features-content"];
 
+let featuresParagraph =  document.getElementsByClassName("top-content")[0].children.item(0).children.item(1);
+featuresText.innerText = siteContent["main-content"]["features-content"];
 
- */
+let aboutHeading =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(0);
+aboutHeading.innerText = siteContent["main-content"]["about-h4"];
 
+let aboutText =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(1);
+aboutText.innerText = siteContent["main-content"]["about-content"];
+
+let middleImage = document.getElementById("middle-img");
+middleImage.src = "img/mid-page-accent.jpg";
+/* 
+let servicestHeading =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(0);
+servicestHeading.innerText = siteContent["main-content"]["about-h4"];
+
+let servicesText =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(1);
+servicesText.innerText = siteContent["main-content"]["about-content"]; */
