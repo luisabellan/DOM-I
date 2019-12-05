@@ -123,7 +123,8 @@ servicesParagraph.innerText = siteContent["main-content"]["services-content"];
  let firstPartAddress = addressParagraph.slice(0,18) + '\n';
  let secondPartAddress = addressParagraph.slice(22,addressParagraph.length-1);
  addressParagraph = firstPartAddress +  secondPartAddress;
- console.log(addressParagraph);
+
+ console.log(addressParagraph); //
 
 
 
