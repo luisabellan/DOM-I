@@ -41,6 +41,9 @@ const siteContent = {
 //let logo = document.getElementById("logo-img");
 //logo.setAttribute('src', siteContent.nav["img-src"]);
 
+
+//Tasks 1 and 2
+
 let nav = document.getElementsByTagName("nav").item(0);
 
 let firstLink = nav.children.item(0);
@@ -124,3 +127,45 @@ servicesParagraph.innerText = siteContent["main-content"]["services-content"];
 
  let footer = document.querySelector("footer");
  footer.innerText = siteContent.footer.copyright;
+
+ //Task 3
+
+
+  let a = document.createElement("a");
+  let b = document.createElement("a");
+  let parent = document.querySelector("nav");
+ 
+  a.innerText = "About Us";
+  b.innerText = "Blog";
+
+  
+
+  parent.prepend(a);
+  parent.appendChild(b);
+
+  
+  let links = document.querySelectorAll("a");
+
+
+	for (let i = 0; i < links.length; i++) {
+	
+		links[i].style.color = "green";
+    
+   /* TODO links[i].onHover =  () => links[i].style.color = "darkgreen"; */
+    
+  }
+
+   //stretch goal
+  a.style.color = "orange";
+  b.style.color = "red";
+
+  let stylerButton = document.createElement("button");
+  stylerButton.innerText = "Change style";
+  stylerButton.onclick = () => {
+    a.style.color = "red";
+    b.style.color = "orange";
+
+  };
+  parent.prepend(stylerButton);
+
+ 
