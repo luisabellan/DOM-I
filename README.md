@@ -1,3 +1,5 @@
+deployed here: https://dom-i.squarerobin.now.sh
+
 # DOM I - JavaScript Content Management System
 
 ## Project Description
