@@ -151,7 +151,7 @@ servicesParagraph.innerText = siteContent["main-content"]["services-content"];
 	
 		links[i].style.color = "green";
     
-   /* TODO links[i].onHover =  () => links[i].style.color = "darkgreen"; */
+   /*  TODO links[i].onHover =  () => links[i].style.color = "darkgreen"; */
     
   }
 
