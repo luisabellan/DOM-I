@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street<br>Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -114,7 +114,7 @@ servicesParagraph.innerText = siteContent["main-content"]["services-content"];
  contactHeading.innerText = siteContent.contact["contact-h4"]; 
 
  let addressParagraph =  document.getElementsByClassName("contact")[0].children.item(1);
- addressParagraph.innerText = siteContent.contact.address;  
+ addressParagraph.innerHTML = siteContent.contact.address;  
 
  let phoneParagraph =  document.getElementsByClassName("contact")[0].children.item(2);
  phoneParagraph.innerText = siteContent.contact.phone; 
