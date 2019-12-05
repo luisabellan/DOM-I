@@ -81,19 +81,33 @@ featuresHeading.innerText = siteContent["main-content"]["features-h4"];
 
 
 let featuresParagraph =  document.getElementsByClassName("top-content")[0].children.item(0).children.item(1);
-featuresText.innerText = siteContent["main-content"]["features-content"];
+featuresParagraph.innerText = siteContent["main-content"]["features-content"];
 
 let aboutHeading =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(0);
-aboutHeading.innerText = siteContent["main-content"]["about-h4"];
+aboutHeading.innerText = siteContent["main-content"]["about-h4"]; 
 
-let aboutText =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(1);
-aboutText.innerText = siteContent["main-content"]["about-content"];
+let aboutParagraph =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(1);
+aboutParagraph.innerText = siteContent["main-content"]["about-content"]; 
 
 let middleImage = document.getElementById("middle-img");
-middleImage.src = "img/mid-page-accent.jpg";
-/* 
-let servicestHeading =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(0);
-servicestHeading.innerText = siteContent["main-content"]["about-h4"];
+middleImage.src = "img/mid-page-accent.jpg"; 
 
-let servicesText =  document.getElementsByClassName("top-content")[0].children.item(1).children.item(1);
-servicesText.innerText = siteContent["main-content"]["about-content"]; */
+ let servicesHeading =  document.getElementsByClassName("bottom-content")[0].children.item(0).children.item(0);
+servicesHeading.innerText = siteContent["main-content"]["services-h4"]; 
+
+ let servicesParagraph =  document.getElementsByClassName("bottom-content")[0].children.item(0).children.item(1);
+servicesParagraph.innerText = siteContent["main-content"]["services-content"];   
+
+  let productHeading =  document.getElementsByClassName("bottom-content")[0].children.item(1).children.item(0);
+  productHeading.innerText = siteContent["main-content"]["product-h4"]; 
+
+ let productParagraph =  document.getElementsByClassName("bottom-content")[0].children.item(1).children.item(1);
+ productParagraph.innerText = siteContent["main-content"]["product-content"]; 
+
+ let visionHeading =  document.getElementsByClassName("bottom-content")[0].children.item(2).children.item(0);
+ visionHeading.innerText = siteContent["main-content"]["vision-h4"]; 
+
+ let visionParagraph =  document.getElementsByClassName("bottom-content")[0].children.item(2).children.item(1);
+ visionParagraph.innerText = siteContent["main-content"]["vision-content"];  
+
+ 
