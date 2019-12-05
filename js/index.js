@@ -110,4 +110,16 @@ servicesParagraph.innerText = siteContent["main-content"]["services-content"];
  let visionParagraph =  document.getElementsByClassName("bottom-content")[0].children.item(2).children.item(1);
  visionParagraph.innerText = siteContent["main-content"]["vision-content"];  
 
- 
+ let contactHeading =  document.getElementsByClassName("contact")[0].children.item(0);
+ contactHeading.innerText = siteContent["contact"]["contact-h4"]; 
+
+ let addressParagraph =  document.getElementsByClassName("contact")[0].children.item(1);
+ addressParagraph.innerText = siteContent["contact"]["address"];  
+
+ let phoneParagraph =  document.getElementsByClassName("contact")[0].children.item(2);
+ phoneParagraph.innerText = siteContent["contact"]["phone"]; 
+
+ let emailParagraph =  document.getElementsByClassName("contact")[0].children.item(3);
+ emailParagraph.innerText = siteContent["contact"]["email"]; 
+
+ let footer = document.getElementById("footer");
