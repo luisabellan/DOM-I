@@ -44,7 +44,7 @@ const siteContent = {
 
 //Tasks 1 and 2
 
-let nav = document.querySelector("nav");
+let nav = document.getElementsByTagName("nav").item(0);
 
 let firstLink = nav.children.item(0);
 firstLink.innerText = siteContent.nav['nav-item-1'];
@@ -116,17 +116,8 @@ servicesParagraph.innerText = siteContent["main-content"]["services-content"];
  let contactHeading =  document.getElementsByClassName("contact")[0].children.item(0);
  contactHeading.innerText = siteContent.contact["contact-h4"]; 
 
-// the following code is to avoid to use innerHTML which allow cross-site attacks
-
  let addressParagraph =  document.getElementsByClassName("contact")[0].children.item(1);
- addressParagraph = siteContent.contact.address;  
- let firstPartAddress = addressParagraph.slice(0,18) + '\n';
- let secondPartAddress = addressParagraph.slice(22,addressParagraph.length-1);
- addressParagraph = firstPartAddress +  secondPartAddress;
-
- console.log(addressParagraph); //
-
-
+ addressParagraph.innerHTML = siteContent.contact.address;  
 
  let phoneParagraph =  document.getElementsByClassName("contact")[0].children.item(2);
  phoneParagraph.innerText = siteContent.contact.phone; 
